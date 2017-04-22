@@ -1,0 +1,33 @@
+01:
+    
+    dict.update(dict2)
+
+02:
+    pass
+
+03:
+  (a)   a = sorted(dict1.keys())  //a为一个排序好的list
+  (b)   for i in range(len(a)):
+            print dict1[a[i]]
+
+  (c)   In [42]: for i in range(len(a)):
+                    print 'key',
+                    print a[i],
+                    print 'value',
+                    print dict1[a[i]]
+        Output:
+                 key a value 1
+                 key aaaadq value 5
+                 key b value 2
+                 key c value 3
+                 key qqq value 4
+
+04:
+    In [46]: a = [1,2,3,4]
+
+    In [47]: b = [9,8,7,6]
+
+    In [48]: d = dict(zip(a,b))
+
+    In [49]: d
+    Out[49]: {1: 9, 2: 8, 3: 7, 4: 6}
